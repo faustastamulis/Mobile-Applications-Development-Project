@@ -1,28 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      News in Ireland
+      Wallstreet Journal
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 <!--For loop for the data array and displaying its contents-->
-      <ion-card *ngFor="let story of NewsStories">
+      <ion-card *ngFor="let wallstory of NewsStoriesWallStreet">
         <ion-card-header>
-          <ion-card-title>{{story.title}}</ion-card-title>
+          <ion-card-title>{{wallstory.title}}</ion-card-title>
         </ion-card-header>
       
         <ion-card-content>
-          {{story.content}}
+          {{wallstory.content}}
         </ion-card-content>
       </ion-card>
-
-     
   
 </ion-content>
-
-
-
-
-
